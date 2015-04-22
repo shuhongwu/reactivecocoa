@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/500px-iOS-api" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/libextobjc" "${PODS_ROOT}/Headers/Public/libffi"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/500px-iOS-api" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/libextobjc" -isystem "${PODS_ROOT}/Headers/Public/libffi"
+OTHER_LDFLAGS = $(inherited) -ObjC -Wl,-no_compact_unwind -l"Pods-FRPGalleryViewController-500px-iOS-api" -l"Pods-FRPGalleryViewController-ReactiveCocoa" -l"Pods-FRPGalleryViewController-SVProgressHUD" -l"Pods-FRPGalleryViewController-libextobjc" -l"Pods-FRPGalleryViewController-libffi" -framework "QuartzCore"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
